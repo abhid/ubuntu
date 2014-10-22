@@ -1,5 +1,4 @@
-FROM ubuntu:14.04
-
+FROM ubuntu:latest
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl wget dnsutils
 RUN rm -rf /var/lib/apt/lists/*
