@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl wget dnsutils git
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl wget dnsutils git ftp
 RUN rm -rf /var/lib/apt/lists/*
 
 # Expose ports
